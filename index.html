@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+        background: url('https://dichvuseo.com/wp-content/uploads/2021/07/anh-nen-cho-website-26.jpg');
+        }
+
+        .login-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px; 
+        }
+
+        .login-form h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .login-form label {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .login-form input {
+            width: 290px;
+            height: 15px;
+            padding: 10px 0px 10px 0px;
+            border: 2px solid #ccc;
+            border-radius: 5px; 
+            padding-left: 5px;
+        }
+
+        .login-form button {
+            width: 300px;
+            height: 40px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-form button:hover {
+        background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Đăng nhập</h2>
+            <label for="username">Tên người dùng:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button type="submit">Đăng nhập</button>
+        </div>
+    </div>
+</body>
+</html>
